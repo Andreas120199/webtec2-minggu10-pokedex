@@ -1,0 +1,14 @@
+<ActionBar [title]= "Details of " + name></ActionBar>
+
+<GridLayout rows=" auto. auto, 0", columns=" *, *">
+    <Label text="Sprite" row="0" colSpan="2"></Label>
+    <Image [src]="pokemon.sprite.front_default" row="1" col="0"></Image>
+    <Image [src]="pokemon.sprite.back_default" row="1" col="1"></Image>
+    <GridLayout  rows="auto, auto", columns=" *, *" row = "2" col = "0"colSpan="3">
+        <Label text="Pokemon Name" row="0" col="0"></Label>
+        <Label [text]="pokemon.name" row="0" col="1"></Label>
+        <Label text="Pokemon Type(s)" row="1" col="0"></Label>
+        <Label [text]="pokemon.type[0].type.name" row="1" col="1"></Label>
+        <Label [text]="pokemon.type[1].type.name" row="2" col="1"></Label>
+      </GridLayout>
+  </GridLayout>

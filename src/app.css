@@ -1,0 +1,7 @@
+
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/red.css";
+
+label {
+    font-size: 20;
+}
